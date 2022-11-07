@@ -1,1 +1,0 @@
-Root directory of apache tomcat server
