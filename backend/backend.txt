@@ -1,1 +1,0 @@
-Backend contains the code that handles parsing the college tour data and notifying students when their tours become available. 
