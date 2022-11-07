@@ -1,0 +1,1 @@
+Jar Files needed to send emails, connect to sql db, ect..
