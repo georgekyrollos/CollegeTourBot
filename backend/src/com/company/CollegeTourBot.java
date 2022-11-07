@@ -38,8 +38,8 @@ public class CollegeTourBot {
 		
 
             readPropertiesFile(filePropName);
-            loadCollegeData(); // Load college list from sql db
-			
+	    
+            loadCollegeData(); // Load college list from sql db	
             fetchTourData(school); // Parse one or all schools depending on if debugging
             loadTourRequestData(school); // Load Tour Requests where user has not been notified + valid date
             notifyTourRequest(); //  check whether tour requested is open, if so, notify + flag to ensure usr not renotified
@@ -62,16 +62,7 @@ public class CollegeTourBot {
         connString = prop.getProperty("conn");
         tomcatRoot = prop.getProperty("rootPath");
     }
-    public static void sendTestEmails(int limit) throws InterruptedException {
-        for(int i=1;i<limit+1;i++)
-        {
-            SendMail2 m = new SendMail2("\n" +
-                    "7328875493@txt.att.net","Message Number "+i,"hi");
-            TimeUnit.SECONDS.sleep(1);
-        }
-    }
-
-
+    //  check whether tour requested is open, if so, notify + flag to ensure usr not renotified
     private static void notifyTourRequest()
     {
         Vector notified = new Vector();
@@ -237,7 +228,7 @@ public class CollegeTourBot {
     }
 
 
-
+   // Parse one or all schools depending on if debugging
     public static void fetchTourData(String onlythiscollege) throws IOException {
         String site = "";
         String timeSite = "";
@@ -603,7 +594,7 @@ public class CollegeTourBot {
         }
 
     }
-
+    // Load Tour Requests where user has not been notified + valid date
     public static void loadTourRequestData(String onlythiscollege)
     {
         Connection conn = getDatabaseConnection();
@@ -649,6 +640,7 @@ public class CollegeTourBot {
             System.out.println(e+"\n Problem loading tour request data, website updated but no emails sent");
         }
     }
+	// Load college list from sql db	
     public static void loadCollegeData()
     {
         Connection conn = getDatabaseConnection();
