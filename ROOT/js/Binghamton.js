@@ -1,0 +1,21 @@
+$('#Binghamton').evoCalendar({   sidebarToggler: false, eventListToggler: false,  theme:'Orange Coral', calendarEvents: [
+ { id:'2670' ,name: "Avail (Click to book)", date: "2022/11/09", description:"01:00 PM", type: "touropen" },
+ { id:'2671' ,name: "Avail (Click to book)", date: "2022/11/10", description:"10:00 AM", type: "touropen" },
+ { id:'2672' ,name: "Unavail Click for bot", date: "2022/11/11", description:"10:00 AM,11:30 AM,01:00 PM,any", type: "tourclosed" },
+ { id:'2673' ,name: "Unavail Click for bot", date: "2022/11/12", description:"10:00 AM,11:30 AM,01:00 PM,02:00 PM,any", type: "tourclosed" },
+ { id:'2674' ,name: "Avail (Click to book)", date: "2022/11/13", description:"10:00 AM,11:30 AM,01:00 PM", type: "touropen" },
+ { id:'2675' ,name: "Avail (Click to book)", date: "2022/11/14", description:"10:00 AM", type: "touropen" },
+ { id:'2676' ,name: "Avail (Click to book)", date: "2022/11/16", description:"01:00 PM", type: "touropen" },
+ { id:'2677' ,name: "Avail (Click to book)", date: "2022/11/18", description:"10:00 AM,11:30 AM,01:00 PM", type: "touropen" },
+ { id:'2678' ,name: "Avail (Click to book)", date: "2022/11/19", description:"10:00 AM,01:00 PM,02:00 PM", type: "touropen" },
+ { id:'2679' ,name: "Avail (Click to book)", date: "2022/11/20", description:"10:00 AM,11:30 AM,01:00 PM", type: "touropen" },
+ { id:'2680' ,name: "Avail (Click to book)", date: "2022/11/21", description:"10:00 AM", type: "touropen" },
+ { id:'2681' ,name: "Avail (Click to book)", date: "2022/11/23", description:"10:00 AM", type: "touropen" },
+ { id:'2682' ,name: "Avail (Click to book)", date: "2022/12/01", description:"10:00 AM", type: "touropen" },
+ { id:'2683' ,name: "Avail (Click to book)", date: "2022/12/02", description:"01:00 PM", type: "touropen" },
+ { id:'2684' ,name: "Avail (Click to book)", date: "2022/12/04", description:"10:00 AM", type: "touropen" },
+ { id:'2685' ,name: "Avail (Click to book)", date: "2022/12/09", description:"01:00 PM", type: "touropen" },
+ { id:'2686' ,name: "Avail (Click to book)", date: "2022/12/10", description:"01:00 PM", type: "touropen" },
+ { id:'2687' ,name: "Avail (Click to book)", date: "2022/12/11", description:"01:00 PM", type: "touropen" },
+
+], });$('#Binghamton').on('selectEvent', function(event,activeEvent) {if(activeEvent.type=='touropen') {	window.open('https://connect.binghamton.edu/portal/campus-visit'); } else { window.location.href='/tourrequest.jsp?cname=Binghamton&date='+activeEvent.date+'&times='+activeEvent.description;     }});

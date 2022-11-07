@@ -1,0 +1,21 @@
+$('#Bucknell').evoCalendar({   sidebarToggler: false, eventListToggler: false,  theme:'Orange Coral', calendarEvents: [
+ { id:'2564' ,name: "Avail (Click to book)", date: "2022/11/08", description:"all", type: "touropen" },
+ { id:'2565' ,name: "Avail (Click to book)", date: "2022/11/09", description:"all", type: "touropen" },
+ { id:'2566' ,name: "Avail (Click to book)", date: "2022/11/10", description:"all", type: "touropen" },
+ { id:'2567' ,name: "Avail (Click to book)", date: "2022/11/11", description:"all,8:00 AM,1:00 PM", type: "touropen" },
+ { id:'2568' ,name: "Avail (Click to book)", date: "2022/11/12", description:"9:00 AM", type: "touropen" },
+ { id:'2569' ,name: "Avail (Click to book)", date: "2022/11/14", description:"all", type: "touropen" },
+ { id:'2570' ,name: "Avail (Click to book)", date: "2022/11/15", description:"all", type: "touropen" },
+ { id:'2571' ,name: "Avail (Click to book)", date: "2022/11/16", description:"all", type: "touropen" },
+ { id:'2572' ,name: "Avail (Click to book)", date: "2022/11/17", description:"all", type: "touropen" },
+ { id:'2573' ,name: "Avail (Click to book)", date: "2022/11/18", description:"all", type: "touropen" },
+ { id:'2574' ,name: "Avail (Click to book)", date: "2022/11/28", description:"all", type: "touropen" },
+ { id:'2575' ,name: "Avail (Click to book)", date: "2022/11/29", description:"all", type: "touropen" },
+ { id:'2576' ,name: "Avail (Click to book)", date: "2022/11/30", description:"all", type: "touropen" },
+ { id:'2577' ,name: "Avail (Click to book)", date: "2022/12/01", description:"all", type: "touropen" },
+ { id:'2578' ,name: "Avail (Click to book)", date: "2022/12/02", description:"all", type: "touropen" },
+ { id:'2579' ,name: "Avail (Click to book)", date: "2022/12/03", description:"all", type: "touropen" },
+ { id:'2580' ,name: "Avail (Click to book)", date: "2022/12/05", description:"all", type: "touropen" },
+ { id:'2581' ,name: "Avail (Click to book)", date: "2022/12/06", description:"all", type: "touropen" },
+
+], });$('#Bucknell').on('selectEvent', function(event,activeEvent) {if(activeEvent.type=='touropen') {	window.open('https://admissions.bucknell.edu/portal/campus-visit'); } else { window.location.href='/tourrequest.jsp?cname=Bucknell&date='+activeEvent.date+'&times='+activeEvent.description;     }});

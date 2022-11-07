@@ -1,0 +1,23 @@
+$('#Emory').evoCalendar({   sidebarToggler: false, eventListToggler: false,  theme:'Orange Coral', calendarEvents: [
+ { id:'1015' ,name: "Avail (Click to book)", date: "2022/11/07", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1016' ,name: "Avail (Click to book)", date: "2022/11/09", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1017' ,name: "Unavail Click for bot", date: "2022/11/10", description:"09:30 AM", type: "tourclosed" },
+ { id:'1018' ,name: "Avail (Click to book)", date: "2022/11/11", description:"01:00 PM", type: "touropen" },
+ { id:'1019' ,name: "Unavail Click for bot", date: "2022/11/11", description:"09:30 AM,01:00 PM", type: "tourclosed" },
+ { id:'1020' ,name: "Unavail Click for bot", date: "2022/11/12", description:"10:00 AM", type: "tourclosed" },
+ { id:'1021' ,name: "Avail (Click to book)", date: "2022/11/17", description:"09:30 AM", type: "touropen" },
+ { id:'1022' ,name: "Avail (Click to book)", date: "2022/11/18", description:"01:00 PM", type: "touropen" },
+ { id:'1023' ,name: "Unavail Click for bot", date: "2022/11/18", description:"09:30 AM,01:00 PM", type: "tourclosed" },
+ { id:'1024' ,name: "Unavail Click for bot", date: "2022/11/19", description:"10:00 AM", type: "tourclosed" },
+ { id:'1025' ,name: "Unavail Click for bot", date: "2022/11/21", description:"09:30 AM,01:00 PM,01:00 PM,any", type: "tourclosed" },
+ { id:'1026' ,name: "Unavail Click for bot", date: "2022/11/22", description:"09:30 AM,01:00 PM,any", type: "tourclosed" },
+ { id:'1027' ,name: "Avail (Click to book)", date: "2022/11/28", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1028' ,name: "Avail (Click to book)", date: "2022/11/29", description:"09:30 AM", type: "touropen" },
+ { id:'1029' ,name: "Avail (Click to book)", date: "2022/11/30", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1030' ,name: "Avail (Click to book)", date: "2022/12/01", description:"09:30 AM", type: "touropen" },
+ { id:'1031' ,name: "Avail (Click to book)", date: "2022/12/02", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1032' ,name: "Unavail Click for bot", date: "2022/12/03", description:"10:00 AM", type: "tourclosed" },
+ { id:'1033' ,name: "Avail (Click to book)", date: "2022/12/05", description:"09:30 AM,01:00 PM,01:00 PM", type: "touropen" },
+ { id:'1034' ,name: "Avail (Click to book)", date: "2022/12/06", description:"09:30 AM", type: "touropen" },
+
+], });$('#Emory').on('selectEvent', function(event,activeEvent) {if(activeEvent.type=='touropen') {	window.open('https://admission.emory.edu/portal/visitall'); } else { window.location.href='/tourrequest.jsp?cname=Emory&date='+activeEvent.date+'&times='+activeEvent.description;     }});

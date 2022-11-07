@@ -1,0 +1,22 @@
+$('#Purdue').evoCalendar({   sidebarToggler: false, eventListToggler: false,  theme:'Orange Coral', calendarEvents: [
+ { id:'1718' ,name: "Unavail Click for bot", date: "2022/11/07", description:"12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1719' ,name: "Avail (Click to book)", date: "2022/11/08", description:"8:30 AM", type: "touropen" },
+ { id:'1720' ,name: "Unavail Click for bot", date: "2022/11/08", description:"9:30 AM,12:30 PM,1:30 PM", type: "tourclosed" },
+ { id:'1721' ,name: "Avail (Click to book)", date: "2022/11/09", description:"9:30 AM,12:30 PM", type: "touropen" },
+ { id:'1722' ,name: "Unavail Click for bot", date: "2022/11/09", description:"8:30 AM,1:30 PM", type: "tourclosed" },
+ { id:'1723' ,name: "Avail (Click to book)", date: "2022/11/10", description:"8:30 AM,12:30 PM", type: "touropen" },
+ { id:'1724' ,name: "Unavail Click for bot", date: "2022/11/10", description:"9:30 AM,1:30 PM", type: "tourclosed" },
+ { id:'1725' ,name: "Avail (Click to book)", date: "2022/11/11", description:"1:30 PM", type: "touropen" },
+ { id:'1726' ,name: "Unavail Click for bot", date: "2022/11/11", description:"8:30 AM,9:30 AM,12:30 PM", type: "tourclosed" },
+ { id:'1727' ,name: "Unavail Click for bot", date: "2022/11/12", description:"8:30 AM", type: "tourclosed" },
+ { id:'1728' ,name: "Avail (Click to book)", date: "2022/11/14", description:"8:30 AM", type: "touropen" },
+ { id:'1729' ,name: "Unavail Click for bot", date: "2022/11/14", description:"9:30 AM,12:30 PM,1:30 PM", type: "tourclosed" },
+ { id:'1730' ,name: "Unavail Click for bot", date: "2022/11/15", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1731' ,name: "Unavail Click for bot", date: "2022/11/16", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1732' ,name: "Unavail Click for bot", date: "2022/11/17", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1733' ,name: "Unavail Click for bot", date: "2022/11/18", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1734' ,name: "Unavail Click for bot", date: "2022/11/19", description:"8:30 AM", type: "tourclosed" },
+ { id:'1735' ,name: "Unavail Click for bot", date: "2022/11/21", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+ { id:'1736' ,name: "Unavail Click for bot", date: "2022/11/22", description:"8:30 AM,9:30 AM,12:30 PM,1:30 PM,any", type: "tourclosed" },
+
+], });$('#Purdue').on('selectEvent', function(event,activeEvent) {if(activeEvent.type=='touropen') {	window.open('https://apply.purdue.edu/portal/admissions-daily-visits'); } else { window.location.href='/tourrequest.jsp?cname=Purdue&date='+activeEvent.date+'&times='+activeEvent.description;     }});

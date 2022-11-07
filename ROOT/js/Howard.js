@@ -1,0 +1,20 @@
+$('#Howard').evoCalendar({   sidebarToggler: false, eventListToggler: false,  theme:'Orange Coral', calendarEvents: [
+ { id:'3762' ,name: "Avail (Click to book)", date: "2022/11/07", description:"10:00 AM,2:00 PM", type: "touropen" },
+ { id:'3763' ,name: "Unavail Click for bot", date: "2022/11/07", description:"12:00 PM", type: "tourclosed" },
+ { id:'3764' ,name: "Unavail Click for bot", date: "2022/11/08", description:"10:00 AM,12:00 PM,any", type: "tourclosed" },
+ { id:'3765' ,name: "Avail (Click to book)", date: "2022/11/09", description:"10:00 AM,12:00 PM,2:00 PM", type: "touropen" },
+ { id:'3766' ,name: "Unavail Click for bot", date: "2022/11/10", description:"10:00 AM,12:00 PM,any", type: "tourclosed" },
+ { id:'3767' ,name: "Unavail Click for bot", date: "2022/11/14", description:"10:00 AM,12:00 PM,2:00 PM,any", type: "tourclosed" },
+ { id:'3768' ,name: "Avail (Click to book)", date: "2022/11/15", description:"10:00 AM,12:00 PM", type: "touropen" },
+ { id:'3769' ,name: "Avail (Click to book)", date: "2022/11/16", description:"10:00 AM,2:00 PM", type: "touropen" },
+ { id:'3770' ,name: "Unavail Click for bot", date: "2022/11/16", description:"12:00 PM", type: "tourclosed" },
+ { id:'3771' ,name: "Unavail Click for bot", date: "2022/11/17", description:"10:00 AM,12:00 PM,any", type: "tourclosed" },
+ { id:'3772' ,name: "Unavail Click for bot", date: "2022/11/18", description:"10:00 AM,12:00 PM,2:00 PM,any", type: "tourclosed" },
+ { id:'3773' ,name: "Unavail Click for bot", date: "2022/11/28", description:"10:00 AM,12:00 PM,2:00 PM,any", type: "tourclosed" },
+ { id:'3774' ,name: "Avail (Click to book)", date: "2022/11/29", description:"10:00 AM", type: "touropen" },
+ { id:'3775' ,name: "Unavail Click for bot", date: "2022/11/29", description:"12:00 PM", type: "tourclosed" },
+ { id:'3776' ,name: "Avail (Click to book)", date: "2022/11/30", description:"10:00 AM,12:00 PM,2:00 PM", type: "touropen" },
+ { id:'3777' ,name: "Unavail Click for bot", date: "2022/12/01", description:"10:00 AM,12:00 PM,any", type: "tourclosed" },
+ { id:'3778' ,name: "Unavail Click for bot", date: "2022/12/02", description:"10:00 AM,12:00 PM,2:00 PM,any", type: "tourclosed" },
+
+], });$('#Howard').on('selectEvent', function(event,activeEvent) {if(activeEvent.type=='touropen') {	window.open('https://applyhu.howard.edu/portal/campusvisit'); } else { window.location.href='/tourrequest.jsp?cname=Howard&date='+activeEvent.date+'&times='+activeEvent.description;     }});
