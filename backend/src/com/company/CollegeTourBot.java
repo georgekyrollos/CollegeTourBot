@@ -106,7 +106,7 @@ public class CollegeTourBot {
         }
         changeNotificationStatus(notified);
     }
-
+	// if tour request is valid, user is notified 
     public static void notify (String times, TourRequest tr)
     {
         if(debug) System.out.println(times);
