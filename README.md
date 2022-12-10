@@ -1,7 +1,7 @@
 # CollegeTourBot
  collegetourbot.com
 This is the official github for collegetourbot.com. CollegeTourBot is a website that consolidates collegetour data and gives users 
-the option to sign up to be notified if a full tour eve opens back up. 
+the option to sign up to be notified if a full tour ever opens back up. 
 
 NOTE: passwords and usernames have been changed to be placeholders. 
 
