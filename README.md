@@ -13,7 +13,7 @@ written to a file and sent to the root directory where it will be used to popula
 	would be overwritten and replaced with new data. 
 The program then loads any relevant tour requests and decides whether to notify the user based on the freshly parsed data. 
 If a tour request is filed, that means that the tour belonging to that request was at some point filled. All that must be done
-to determine whether the user should be notified is to see if the tour date/time of the request is currently in the available data 
+to determine whether the user should be notified is to see if the tour date/time of the request is currently in the 'available schools' data 
 structure. This means that the tour is now open, so an email should be sent. The notification status of the user is then updated 
 accordingly to ensure that users are not notified multiple times for the same tour. 
 
